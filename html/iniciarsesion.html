@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+	<!--
+	Estudiantes: Jorge Andrés Medina Castro - Héctor Iván Rincón Ramírez
+	Asignatura:Seminario Regional II
+	Universidad:Universidad Cooperativa de Colombia
+	Fecha: 18 de Abril de 2015
+	Docente: Juan Guillermo Gomez
+	Proyecto: Emprendimiento, pagina de inicio de sesión 
+-->
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta desription="TRANSLOCAL H-J">	
+		<title>Iniciar Sesion</title>
+		<link type="text/css" rel="stylesheet" href="../css/vendor/normalize.css">
+		<link type="text/css" rel="stylesheet" href="../css/inicio.css">
+		<!-- Se llama el css creado para dar aspecto más agradable a la página-->
+		<script language=javascript type="text/javascript" src="../js/inicio.js"></script>  <!--Se llama las funciones del javascript creado-->
+	</head>
+	<body>
+		<header>
+			<div>
+				<figure class="logosesion">
+						<img src="../img/logoDos.png"/>
+						<h1 class="titulosesion">TRANSLOCAL HJ</h1>
+						<h1 class="titulosesion">Iniciar Sesión</h1>
+				</figure>
+			</div>
+		</header>
+
+		<section class="divFormulario">
+		<form action="">
+			
+			<p>
+				<label class="divLabelFormulario" for="email">E-mail:</label>
+				<input type="email" placeholder="Ingresa Email" name="email" id="email" >				
+			</p>
+			<p>
+				<label class="divLabelFormulario" for="contrasena">Contraseña:</label>
+				<input type="password" placeholder="Contraseña" name="contrasena" id="contrasena" maxlength="20" >				
+			</p>
+
+			<p>
+				<label class="divLabelFormulario">Que Usuario eres?:</label>
+                <select class="select" id="tipo" size="1"> 
+                    <option value="1"> </option> 
+                    <option value="2">Proveedor</option> 
+                    <option value="3">Usuario</option> 
+                </select>
+            </p>
+			
+			<input class="boton" type="button"  onClick="validarusuario();" value="Iniciar Sesión">
+		</form>		
+	</section>
+
+
+		
+		<footer>
+			<p>Creado por:  Héctor Rincón y Jorge Medina</p>
+			<p>Teléfono: 315 455 8247</p>
+			<div class="logo_empresa">
+				<figure class="logo_empresa-posicion"><img src="../img/logo_empresa.png"/></figure>			
+			</div>
+			<p class="correo"><a href="mailto:hector.rinconr@campusucc.edu.co">Enviar correo</a>
+			
+ 		</footer>
+	</body>
+</html>

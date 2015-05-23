@@ -1,0 +1,92 @@
+
+header {
+
+	background: #444;
+	box-shadow: 0 5px 0 rgba(black, 0.2);
+	position: relative;
+	overflow: hidden;
+	
+
+
+}
+img {
+
+    border-radius: 50%;
+	padding: 0.5em;
+	width: 80px; 
+
+}
+
+
+.logosesion{
+	
+	text-align: center;
+	padding: 0;
+
+}
+
+.titulosesion{
+
+	
+	color: white;
+	text-align: center;
+
+	
+}
+
+.divFormulario {
+	
+  margin: .4em 0;
+  text-align: center;
+}
+.divLabelFormulario {
+  color: black;
+  float: left;
+  width: 30%;
+ 
+}
+
+.select{
+ 
+ 
+  width: 12.5%;
+ 
+}
+
+
+.boton{
+	background:#2E9AFE;
+	border-radius:5px;
+	color:#fff;
+	font-style:italic;
+	text-align: center;
+	padding:.3em .5em;
+	text-decoration:none;
+	text-shadow:1px 1px #000;
+}
+
+.botonDos{
+	background:red;
+	border-radius:5px;
+	color:#fff;
+	font-style:italic;
+	text-align: center;
+	padding:.3em .5em;
+	text-decoration:none;
+	text-shadow:1px 1px #000;
+}
+
+
+footer{
+	background:#444;
+	color:#fff;
+	padding:.10em 0;
+	text-align:center;
+	width:100%;
+	font-weight:normal;
+	font-size:14px;
+	display:inline-block;
+
+	
+
+}

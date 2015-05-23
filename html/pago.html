@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+	<!--
+	Estudiantes: Jorge Andrés Medina Castro - Héctor Iván Rincón Ramírez
+	Asignatura:Seminario Regional II
+	Universidad:Universidad Cooperativa de Colombia
+	Fecha: 18 de Abril de 2015
+	Docente: Juan Guillermo Gomez
+	Proyecto: Emprendimiento, pagina de inicio de sesión 
+-->
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta desription="TRANSLOCAL H-J">	
+		<title>Realizar Pago</title>
+		<link type="text/css" rel="stylesheet" href="../css/vendor/normalize.css">
+		<link type="text/css" rel="stylesheet" href="../css/pago.css">
+		<!-- Se llama el css creado para dar aspecto más agradable a la página-->
+		<script language=javascript type="text/javascript" src="../js/pago.js"></script>  <!--Se llama las funciones del javascript creado-->
+		<script language=javascript type="text/javascript" src="../js/cancelar.js"></script>  <!--Se llama las funciones del javascript creado-->
+	</head>
+	<body>
+		<header>
+			<div>
+				<figure class="logosesion">
+						<img src="../img/logoDos.png"/>
+						<h1 class="titulosesion">TRANSLOCAL HJ</h1>
+						<h1 class="titulosesion">Realizar Pago</h1>
+				</figure>
+			</div>
+		</header>
+
+		<section class="divFormulario">
+		<form action="">
+		<div class="divFormulario">
+			<p>
+				<label class="divLabelFormulario" for="tarjeta">Tarjeta Tipo:</label>			
+				<input type="radio" name="group1" value="visa"> Visa
+				
+				<input type="radio" name="group1" value="master" checked> Mastercard
+				
+				
+				<br>
+			</p>
+			<p>
+				<label class="divLabelFormulario" for="nombre">Nombre:</label>
+				<input type="text" placeholder="Nombre Titular Cuenta" name="nombre" id="nombre" maxlength="20" required >		
+			</p>
+
+			<p>
+				<label class="divLabelFormulario" for="telefono">Telefono:</label>
+				<input type="tel" placeholder="Número de Telefono" name="telefono" id="telefono" maxlength="20" >		
+			</p>
+			
+
+			<p>
+				<label class="divLabelFormulario" for="cuenta">Cuenta:</label>
+				<input type="text" placeholder="Número de Cuenta" name="cuenta" id="cuenta" maxlength="20" >		
+			</p>
+			
+			<p>
+				<label class="divLabelFormulario" for="contrasena">Contraseña:</label>
+				<input type="password" placeholder="Contraseña" name="contrasena" id="contrasena" maxlength="20" >		
+			</p>
+			
+			<p>
+				<label class="divLabelFormulario" for="cuotas">Cuotas:</label>
+				<input type="number" placeholder="Número de Cuotas" name="cuotas" id="cuotas" maxlength="20" >		
+			</p>
+				
+			<input class="boton" type="button" onClick="pago();" value="Aceptar">
+
+			<input class="botonDos" type="button" onClick="cancelar();" value="Cancelar">
+		</form>		
+	</section>
+
+
+		
+		<footer>
+			<p>Creado por:  Héctor Rincón y Jorge Medina</p>
+			<p>Teléfono: 315 455 8247</p>
+			<div class="logo_empresa">
+				<figure class="logo_empresa-posicion"><img src="../img/logo_empresa.png"/></figure>			
+			</div>
+			<p class="correo"><a href="mailto:hector.rinconr@campusucc.edu.co">Enviar correo</a>
+			
+ 		</footer>
+	</body>
+</html>

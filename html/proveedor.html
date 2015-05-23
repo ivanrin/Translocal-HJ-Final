@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+	<!--
+	Estudiantes: Jorge Andrés Medina Castro - Héctor Iván Rincón Ramírez
+	Asignatura:Seminario Regional II
+	Universidad:Universidad Cooperativa de Colombia
+	Fecha: 18 de Abril de 2015
+	Docente: Juan Guillermo Gomez
+	Proyecto: Emprendimiento
+-->
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta desription="TRANSLOCAL H-J">	
+		<title>Sesión Proveedor</title>
+		<link type="text/css" rel="stylesheet" href="../css/vendor/normalize.css">
+		<link type="text/css" rel="stylesheet" href="../css/stylos.css">
+		<!-- Se llama el css creado para dar aspecto más agradable a la página-->
+	</head>
+	<body>
+		<header>				
+				<div> <!--Div para el logo--> 
+					<figure class="logo">
+						<img src="../img/logoDos.png"/>
+						<h1 class="titulo">Benvenido Estimado Proveedor</h1>
+					</figure>
+				</div> 
+
+				<div class="avatar"> <!--Div para el avatar--> 
+
+					<figure >
+						<img class="avatar-img" src="../img/avatar.png"/>
+						<a class="titulo-CerrarSesion" href="iniciarcrear.html">Cerrar Sesión</a>
+					<figure/>
+				</div>
+		</header>
+
+		<nav> <!--Barra de menu--> 
+				<ul class="menunav"> <!--lista de opciones de la barra de menu--> 
+					<li> <a href="registrarvehiculo.html">Inscribir Vehículo</a></li>
+					<li><a href="pago.html">Registrar Pago</a></li>
+				</ul> <!--Fin de la lista--> 
+	    </nav> <!--Fin de la barra de menu -->
+
+		<!-- Es la seccion en donde va el mapa de localización del proveedor-->
+		<section>
+		  <article class="article-central">
+			<div>
+				<h4 class="article-central-parrafo">Usted está aquí</h4>
+				<figure >					
+					<!-- Aqui va un mapa ubicado en la parte izquierda superior de la pantalla-->
+					<img class="ubicacion" src="../img/ubicacionStatic.jpg"/>
+				</figure>
+
+			</div>
+			<div class="calendario-citas-proveedor">
+					<h4>Que Fecha Desea Consultar:</h4>
+					<input type="date" name="fecha">
+					<div class="calendario-citas-proveedor-resumen">
+						<h4>Resumen citas del día: 3</h4>
+						<h4>Resumen citas de la semana: 12</h4>						
+					</div>
+			</div>				
+		  </article>
+		</section>
+		<footer>
+			<p>Creado por:  Héctor Rincón y Jorge Medina</p>
+			<p>Teléfono: 315 455 8247</p>
+			<div class="logo_empresa">
+				<figure class="logo_empresa-posicion"><img src="../img/logo_empresa.png"/></figure>			
+			</div>
+			<p class="correo"><a href="mailto:hector.rinconr@campusucc.edu.co">Enviar correo</a>
+			
+ 		</footer>
+	</body>
+</html>

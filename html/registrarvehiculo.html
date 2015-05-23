@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+	<!--
+	Estudiantes: Jorge Andrés Medina Castro - Héctor Iván Rincón Ramírez
+	Asignatura:Seminario Regional II
+	Universidad:Universidad Cooperativa de Colombia
+	Fecha: 18 de Abril de 2015
+	Docente: Juan Guillermo Gomez
+	Proyecto: Emprendimiento, pagina de inicio de sesión 
+-->
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta desription="TRANSLOCAL H-J">	
+		<title>Registrar Vehículo</title>
+		<link type="text/css" rel="stylesheet" href="../css/vendor/normalize.css">
+		<link type="text/css" rel="stylesheet" href="../css/registrovehiculo.css">
+		<!-- Se llama el css creado para dar aspecto más agradable a la página-->
+		<script language=javascript type="text/javascript" src="../js/registrovehiculo.js"></script>  <!--Se llama las funciones del javascript creado-->
+		<script language=javascript type="text/javascript" src="../js/cancelar.js"></script>  <!--Se llama las funciones del javascript creado-->
+	</head>
+	<body>
+		<header>
+			<div>
+				<figure class="logosesion">
+						<img src="../img/logoDos.png"/>
+						<h1 class="titulosesion">TRANSLOCAL HJ</h1>
+						<h1 class="titulosesion">Inscribir Vehículo</h1>
+				</figure>
+			</div>
+		</header>
+
+		<section class="divFormulario">
+		<form action="">
+			<p>
+				<label class="divLabelFormulario" for="modelo">Modelo:</label>
+				<input type="number" placeholder="Modelo del Vehículo" name="modelo" id="modelo" maxlength="20" required >		
+			</p>
+
+			<p>
+				<label class="divLabelFormulario" for="placa">Placa:</label>
+				<input type="text" placeholder="Placa del Vehículo" name="placa" id="placa" maxlength="20" >		
+			</p>
+			
+			<p>
+				<label class="divLabelFormulario" for="color">Color:</label>
+				<input type="text" placeholder="Color del Vehículo" name="color" id="color" maxlength="20" >		
+			</p>
+
+			<p>
+				<label class="divLabelFormulario" for="aire">Aire Acondicionado:</label>
+                <select class="select" id="aire" size="1"> 
+                    <option value="1"> </option> 
+                    <option value="2">Si</option> 
+                    <option value="3">No</option> 
+                </select>
+            </p>
+
+			<p>
+			<label class="divLabelFormulario">Tipo:</label>
+                <select class="select" id="tipo" size="1"> 
+                    <option value="1"> </option> 
+                    <option value="2">Automóvil</option> 
+                    <option value="3">Autobús</option> 
+                    <option value="4">Camioneta</option> 
+                    <option value="5">Microbús</option> 
+                    
+                </select>
+			</p>
+			
+			<p>
+				<label class="divLabelFormulario">SOAT:</label>
+				<input type="text" placeholder="Número de SOAT" name="soat" id="soat" maxlength="20" >		
+			</p>
+
+			<p>
+				<label class="divLabelFormulario" for="compania">Compañía:</label>
+				<input type="text" placeholder="Nombre Compañía del SOAT" name="compania" id="compania" maxlength="20" >		
+			</p>
+
+			<p>
+				<label class="divLabelFormulario" for="vencimiento">Vencimiento SOAT:</label>
+				<input type="date" name="vencimiento" id="vencimiento" maxlength="20" >		
+			</p>
+		
+
+			<p>
+				<label class="divLabelFormulario" for="rcc">Seguro RCC:</label>
+				<input type="text" placeholder="Número Seguro RCC" name="rcc" id="rcc" maxlength="20" >		
+			</p>
+
+			<p>
+				<label class="divLabelFormulario" for="companiados">Compañía:</label>
+				<input type="text" placeholder="Nombre Compañía seguro RCC" name="companiados" id="companiados" maxlength="20" >		
+			</p>
+
+			<p>
+				<label class="divLabelFormulario" for="vencimientodos">Vencimiento RCC:</label>
+				<input type="date" name="vencimientodos" id="vencimientodos" maxlength="20" >		
+			</p>
+
+			<p>
+				<label class="divLabelFormulario" for="rce">Seguro RCE:</label>
+				<input type="text" placeholder="Número Seguro RCE" name="rce" id="rce" maxlength="20" >		
+			</p>
+
+			<p>
+				<label class="divLabelFormulario" for="companiatres">Compañía:</label>
+				<input type="text" placeholder="Nombre Compañía seguro RCE" name="companiatres" id="companiatres" maxlength="20" >		
+			</p>
+
+			<p>
+				<label class="divLabelFormulario" for="vencimientotres">Vencimiento RCE:</label>
+				<input type="date" name="vencimientotres" id="vencimientotres" maxlength="20" >		
+			</p>
+
+			<input class="boton" type="button" onClick="registrovehiculo();" value="Registrar">
+
+			<input class="botonDos" type="button" onClick="cancelar();" value="Cancelar">
+		</form>		
+	</section>
+
+
+		
+		<footer>
+			<p>Creado por:  Héctor Rincón y Jorge Medina</p>
+			<p>Teléfono: 315 455 8247</p>
+			<div class="logo_empresa">
+				<figure class="logo_empresa-posicion"><img src="../img/logo_empresa.png"/></figure>			
+			</div>
+			<p class="correo"><a href="mailto:hector.rinconr@campusucc.edu.co">Enviar correo</a>
+			
+ 		</footer>
+	</body>
+</html>

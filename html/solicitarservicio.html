@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+	<!--
+	Estudiantes: Jorge Andrés Medina Castro - Héctor Iván Rincón Ramírez
+	Asignatura:Seminario Regional II
+	Universidad:Universidad Cooperativa de Colombia
+	Fecha: 18 de Abril de 2015
+	Docente: Juan Guillermo Gomez
+	Proyecto: Emprendimiento, pagina de inicio de sesión 
+-->
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta desription="TRANSLOCAL H-J">	
+		<title>Solicitar Servicio</title>
+		<link type="text/css" rel="stylesheet" href="../css/vendor/normalize.css">
+		<link type="text/css" rel="stylesheet" href="../css/solicitud.css">
+		<!-- Se llama el css creado para dar aspecto más agradable a la página-->
+		<script language=javascript type="text/javascript" src="../js/solicitud.js"></script>  <!--Se llama las funciones del javascript creado-->
+		<script language=javascript type="text/javascript" src="../js/cancelardos.js"></script>  <!--Se llama las funciones del javascript creado-->
+	</head>
+	<body>
+		<header>
+			<div>
+				<figure class="logosesion">
+						<img src="../img/logoDos.png"/>
+						<h1 class="titulosesion">TRANSLOCAL HJ</h1>
+						<h1 class="titulosesion">Solicitar Servicio</h1>
+				</figure>
+			</div>
+		</header>
+
+		<section class="divFormulario">
+		<form action="">
+			
+			<p>
+				<label class="divLabelFormulario" for="proveedor">Proveedor Deseado:</label>
+                <select class="select" id="proveedor" size="1"> 
+                    <option value="1"> </option> 
+                    <option value="2">Ana Rosero</option> 
+                    <option value="3">Carlos Arana</option> 
+                    <option value="4">David Murcia</option> 
+                </select>
+            </p>
+		
+			<p>
+				<label class="divLabelFormulario">Nombre:</label>
+				<input type="text" placeholder="Ingrese su Nombre" name="nombre" id="nombre" maxlength="20" >		
+			</p>
+			
+			<p>
+				<label class="divLabelFormulario">Apellido:</label>
+				<input type="text" placeholder="Ingrese su Apellido" name="apellido" id="apellido" maxlength="20" >		
+			</p>
+
+			<p>
+				<label class="divLabelFormulario">Telefono:</label>
+				<input type="tel" placeholder="Número de Telefono" name="telefono" id="telefono" maxlength="20" >		
+			</p>
+
+			<p>
+			<label class="divLabelFormulario">Mensaje:</label>
+			<textarea rows="3" cols="45">
+
+			</textarea>
+
+			</p>
+
+			<input class="boton" type="button" onClick="solicitud();" value="Aceptar">
+
+			<input class="botonDos" type="button" onClick="cancelardos();" value="Cancelar">
+		</form>		
+	</section>
+
+
+		
+		<footer>
+			<p>Creado por:  Héctor Rincón y Jorge Medina</p>
+			<p>Teléfono: 315 455 8247</p>
+			<div class="logo_empresa">
+				<figure class="logo_empresa-posicion"><img src="../img/logo_empresa.png"/></figure>			
+			</div>
+			<p class="correo"><a href="mailto:hector.rinconr@campusucc.edu.co">Enviar correo</a>
+			
+ 		</footer>
+	</body>
+</html>
